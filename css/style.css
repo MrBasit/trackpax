@@ -139,6 +139,21 @@ img{
     {
         width: min(540px, 90%);
     }
+    /* parcel */
+    .parcel .parcel_img{
+        top: 3.5rem;
+    }
+    /* grow */
+    .grow_main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .grow_main .grow_content-main{
+        width: 100% ;
+    }
+    .grow_main .grow_img_wrapper{
+        width: 55%;
+    }
     /* status */
     .status_img-main {
         padding: 2em 3em !important;
@@ -432,24 +447,21 @@ header.login_header{
 }
 /* ---- grow --------------------------------------------------------------- */
 .grow{
-    padding-top: 4rem;
-    position: relative;
+    padding-top: 7rem;
+    /* position: relative; */
 }
-.grow_img{
-    position: absolute;
-    width: 30rem;
-    top: 15.5em;
-    right: 3.6em;
-    z-index: -1;
+.grow_main{
+    display: flex;
+    justify-content: space-between;
 }
 .grow_content-main{
-    padding: 4em 0 5em 0;
-    width: 64%;
+    margin-bottom:  5em;
+    width: 55%;
 }
 .grow_content_title{
     font-size: var(--title-lg);
     font-weight: 650;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     line-height: 1.1;
 }
 .parcel_text,
@@ -462,6 +474,16 @@ header.login_header{
 .parcel_btn,
 .grow_btn{
     margin-top: 2rem;
+}
+.grow_img_wrapper{
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+}
+.grow_img{
+    z-index: -1;
+    max-width: 100%;
+    /* border: 2px solid red; */
 }
 /* ---- status --------------------------------------------------------------*/
 .status{

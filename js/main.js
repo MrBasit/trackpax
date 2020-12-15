@@ -16,7 +16,7 @@ try {
             navOpen = false;
             setTimeout(() => {
                 headerLogo.src = './img/logo.png';
-            }, 1400);
+            }, 250);
         }
     }
 

@@ -229,6 +229,12 @@ header.login_header{
     display: flex;
     justify-content: space-between;
 }
+.main_nav .header_list_2{
+  pointer-events: none;
+} 
+.main_nav.active .header_list_2{
+  pointer-events: painted;
+}
 .logo{
     width: 14rem;
     z-index: 1056 !important;
@@ -474,6 +480,7 @@ header.login_header{
 .parcel_btn,
 .grow_btn{
     margin-top: 2rem;
+    cursor: not-allowed;
 }
 .grow_img_wrapper{
     width: 40%;
@@ -591,7 +598,7 @@ header.login_header{
     background-color: transparent;
     border: 0;
     outline: 0;
-    cursor: pointer;
+    cursor: not-allowed;
 }
 .select_account .accounts_link + .accounts_link{
     margin-left: 1rem;
@@ -640,6 +647,7 @@ footer{
     opacity: .7;
     font-size: .9rem;
     transition: opacity .3s;
+    cursor: not-allowed;
 }
 .footer_link:hover,
 .footer_link:focus{
@@ -674,6 +682,7 @@ footer{
 }
 .footer_bottom_links{
    transition: opacity .3s;
+   cursor: not-allowed;
 }
 .footer_bottom_links:focus,
 .footer_bottom_links:hover{
